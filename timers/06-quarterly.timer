@@ -3,7 +3,8 @@ Description=Quarterly Timer
 
 [Timer]
 OnBootSec=30min
-OnCalendar=01,04,07,10-01
+#OnCalendar=01,04,07,10-01
+OnCalendar=quarterly
 Unit=06-quarterly.target
 Persistent=true
 
