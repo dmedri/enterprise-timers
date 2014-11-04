@@ -1,0 +1,11 @@
+[Unit]
+Description=Monthly Timer
+
+[Timer]
+OnBootSec=25min
+OnCalendar=monthly
+Unit=05-monthly.target
+Persistent=true
+
+[Install]
+WantedBy=basic.target

@@ -1,0 +1,11 @@
+[Unit]
+Description=Semi-annually Timer
+
+[Timer]
+#OnCalendar=01,07-01
+OnCalendar=semi-annually
+Unit=07-semiannually.target
+Persistent=true
+
+[Install]
+WantedBy=basic.target

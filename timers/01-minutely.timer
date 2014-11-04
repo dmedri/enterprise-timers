@@ -1,0 +1,11 @@
+[Unit]
+Description=Minutely Timer
+
+[Timer]
+#OnCalendar=*:0/1:00
+OnCalendar=minutely
+Unit=01-minutely.target
+Persistent=true
+
+[Install]
+WantedBy=basic.target
