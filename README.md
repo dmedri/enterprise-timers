@@ -1,20 +1,16 @@
 enterprise-timers
 =================
 
-<p>A configuration of systemd timers for business needs.</p>
+This is a running set of systemd .timers for  periodic tasks (see. onCalendar= settings).
 
-Install
--------
+OnCalendar syntax accept these options:
 
-```
-cd timers
-make install
-```
-
-In the same directory, run:
-
-```
-make enable
-make start
-```
-to enable and start services.
+- usec, us (microsecond)
+- msec, ms (millisecond)
+- seconds, second, sec, s
+- minutes, minute, min, m
+- hours, hour, hr, h
+- days, day, d
+- weeks, week, w
+- months, month, M
+- years, year, y

@@ -1,0 +1,68 @@
+#!/usr/bin/env bash
+
+case "$1" in
+    enable)
+	# Enable services
+	systemctl --user -q enable 01-minutely.timer &&
+	systemctl --user -q enable 02-hourly.timer &&
+	systemctl --user -q enable 03-daily.timer &&
+	systemctl --user -q enable 04-weekly.timer &&
+	systemctl --user -q enable 05-monthly.timer &&
+	systemctl --user -q enable 06-quarterly.timer &&
+	systemctl --user -q enable 07-semiannually.timer &&
+	systemctl --user -q enable 08-yearly.timer &&
+	echo -e "\nServices in user-space: enabled."
+    ;;
+
+    disable)
+	# Disable services
+	systemctl --user -q disable 01-minutely.timer &&
+	systemctl --user -q disable 02-hourly.timer &&
+	systemctl --user -q disable 03-daily.timer &&
+	systemctl --user -q disable 04-weekly.timer &&
+	systemctl --user -q disable 05-monthly.timer &&
+	systemctl --user -q disable 06-quarterly.timer &&
+	systemctl --user -q disable 07-semiannually.timer &&
+	systemctl --user -q disable 08-yearly.timer &&
+	echo -e "\nServices in user-space: disabled."
+    ;;
+
+    start)
+	# Start services
+	systemctl --user -q start 01-minutely.timer &&
+	systemctl --user -q start 02-hourly.timer &&
+	systemctl --user -q start 03-daily.timer &&
+	systemctl --user -q start 04-weekly.timer &&
+	systemctl --user -q start 05-monthly.timer &&
+	systemctl --user -q start 06-quarterly.timer &&
+	systemctl --user -q start 07-semiannually.timer &&
+	systemctl --user -q start 08-yearly.timer &&
+	echo -e "\nServices in user-space: started."
+    ;;
+
+    stop)
+	# Stop services
+	systemctl --user -q stop 01-minutely.timer &&
+	systemctl --user -q stop 02-hourly.timer &&
+	systemctl --user -q stop 03-daily.timer &&
+	systemctl --user -q stop 04-weekly.timer &&
+	systemctl --user -q stop 05-monthly.timer &&
+	systemctl --user -q stop 06-quarterly.timer &&
+	systemctl --user -q stop 07-semiannually.timer &&
+	systemctl --user -q stop 08-yearly.timer &&
+	echo -e "\nServices in user-space: stopped."
+    ;;
+
+    status)
+	# Show timers
+	systemctl list-timers --user --all
+    ;;
+
+    *)
+	echo "Usage: timers.sh {enable|disable|start|stop|status}"
+	exit 1
+    ;;
+
+esac
+
+exit 0
