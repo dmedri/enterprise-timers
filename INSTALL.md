@@ -6,7 +6,7 @@ Install
 
 There are two way to install this timers:
 
-- at system level (under ``/etc/systemd/`` directory, as root);
+- at system level (under ``/etc/systemd/system/`` directory, as root);
 - at user level (under your own ``~/.config/systemd/user/`` directory).
 
 The last option come up in recent systemd releases. This is why out first deployment was targeted for system level, and now for users as default. The following install commands are for user. For system location, use ``make install_system``.
@@ -28,4 +28,9 @@ To disable and stop:
 ```
 ./enterprise-timers-user stop
 ./enterprise-timers-user disable
+```
+
+To show what is happen:
+```
+./enterprise-timers-user status
 ```
