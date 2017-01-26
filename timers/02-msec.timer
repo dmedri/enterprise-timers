@@ -1,0 +1,11 @@
+[Unit]
+Description=Msec Timer
+
+[Timer]
+#OnCalendar=*:0/1:00
+OnCalendar=1ms
+Unit=02-msec.target
+Persistent=true
+
+[Install]
+WantedBy=basic.target

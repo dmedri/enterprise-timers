@@ -1,0 +1,11 @@
+[Unit]
+Description=Seconds Timer
+
+[Timer]
+#OnCalendar=*:0/1:00
+OnCalendar=1sec
+Unit=03-seconds.target
+Persistent=true
+
+[Install]
+WantedBy=basic.target

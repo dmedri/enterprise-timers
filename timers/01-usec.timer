@@ -1,0 +1,11 @@
+[Unit]
+Description=Usec Timer
+
+[Timer]
+#OnCalendar=*:0/1:00
+OnCalendar=1us
+Unit=01-usec.target
+Persistent=true
+
+[Install]
+WantedBy=basic.target

@@ -1,10 +1,10 @@
 [Unit]
-Description=Weekly Timer
+Description=Weeks Timer
 
 [Timer]
 OnBootSec=20min
 OnCalendar=weekly
-Unit=04-weekly.target
+Unit=07-weeks.target
 Persistent=true
 
 [Install]

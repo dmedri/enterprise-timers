@@ -1,10 +1,10 @@
 [Unit]
-Description=Hourly Timer
+Description=Hours Timer
 
 [Timer]
 OnBootSec=10min
 OnCalendar=hourly
-Unit=02-hourly.target
+Unit=05-hours.target
 Persistent=true
 
 [Install]

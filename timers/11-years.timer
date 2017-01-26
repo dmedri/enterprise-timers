@@ -1,10 +1,10 @@
 [Unit]
-Description=Yearly Timer
+Description=Years Timer
 
 [Timer]
 OnBootSec=40min
 OnCalendar=yearly
-Unit=08-yearly.target
+Unit=11-years.target
 Persistent=true
 
 [Install]

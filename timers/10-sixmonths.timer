@@ -1,10 +1,10 @@
 [Unit]
-Description=Semi-annually Timer
+Description=Six Months Timer
 
 [Timer]
 #OnCalendar=01,07-01
 OnCalendar=semi-annually
-Unit=07-semiannually.target
+Unit=10-sixmonths.target
 Persistent=true
 
 [Install]

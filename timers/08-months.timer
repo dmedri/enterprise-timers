@@ -1,10 +1,10 @@
 [Unit]
-Description=Monthly Timer
+Description=Months Timer
 
 [Timer]
 OnBootSec=25min
 OnCalendar=monthly
-Unit=05-monthly.target
+Unit=08-months.target
 Persistent=true
 
 [Install]

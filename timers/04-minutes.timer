@@ -1,10 +1,10 @@
 [Unit]
-Description=Minutely Timer
+Description=Minutes Timer
 
 [Timer]
 #OnCalendar=*:0/1:00
 OnCalendar=minutely
-Unit=01-minutely.target
+Unit=04-minutes.target
 Persistent=true
 
 [Install]
