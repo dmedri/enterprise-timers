@@ -1,4 +1,4 @@
 enterprise-timers
 =================
 
-This is a running set of systemd .timers for  periodic tasks (see. onCalendar= settings).
+A set of tested systemd .timers to run periodic tasks (see. onCalendar= settings).
